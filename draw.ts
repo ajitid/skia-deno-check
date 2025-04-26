@@ -1,7 +1,7 @@
 import { canvas } from "./init.ts";
 
 canvas.onDraw = (ctx) => {
-  // ctx.reset(); has issues, have reported
+  ctx.reset();
 
   ctx.fillStyle = "pink";
   ctx.fillRect(0, 0, ctx.canvas.width, ctx.canvas.height);
